@@ -21,20 +21,20 @@ class __TwigTemplate_a4600c2dff032b8c641edcde84fa7089c00ee8e06e19f69517c07a526e0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_812fa170494de3fa8681e3b9880353d7607a31ca694239232ac8fcb1ec1d7e30 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_812fa170494de3fa8681e3b9880353d7607a31ca694239232ac8fcb1ec1d7e30->enter($__internal_812fa170494de3fa8681e3b9880353d7607a31ca694239232ac8fcb1ec1d7e30_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PgGsbFraisBundle::accueil.html.twig"));
+        $__internal_c4c109aff6129f611d8036c2028ae903aec05f62167e9bc6652b54955379da61 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c4c109aff6129f611d8036c2028ae903aec05f62167e9bc6652b54955379da61->enter($__internal_c4c109aff6129f611d8036c2028ae903aec05f62167e9bc6652b54955379da61_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PgGsbFraisBundle::accueil.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_812fa170494de3fa8681e3b9880353d7607a31ca694239232ac8fcb1ec1d7e30->leave($__internal_812fa170494de3fa8681e3b9880353d7607a31ca694239232ac8fcb1ec1d7e30_prof);
+        $__internal_c4c109aff6129f611d8036c2028ae903aec05f62167e9bc6652b54955379da61->leave($__internal_c4c109aff6129f611d8036c2028ae903aec05f62167e9bc6652b54955379da61_prof);
 
     }
 
     // line 2
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_8227088ea9f36c9c1671be36760e82be91158122ee92f4cffc3d0a2b5227719f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8227088ea9f36c9c1671be36760e82be91158122ee92f4cffc3d0a2b5227719f->enter($__internal_8227088ea9f36c9c1671be36760e82be91158122ee92f4cffc3d0a2b5227719f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_2706f66cd13adab886b882e0d26bbbb76db954eaaaa9bb54b2ad5c9328491798 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2706f66cd13adab886b882e0d26bbbb76db954eaaaa9bb54b2ad5c9328491798->enter($__internal_2706f66cd13adab886b882e0d26bbbb76db954eaaaa9bb54b2ad5c9328491798_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 3
         echo "<div id=\"menuGauche\">
@@ -44,7 +44,7 @@ class __TwigTemplate_a4600c2dff032b8c641edcde84fa7089c00ee8e06e19f69517c07a526e0
         // line 6
         if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "session", array(), "any", false, true), "get", array(0 => "nom"), "method", true, true)) {
             // line 7
-            echo "                           Visiteur: bonjour ";
+            echo "                           Visiteurs: bonjour ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "nom"), "method"), "html", null, true);
             echo "<br>   
             ";
@@ -75,7 +75,7 @@ class __TwigTemplate_a4600c2dff032b8c641edcde84fa7089c00ee8e06e19f69517c07a526e0
      </div> 
 ";
         
-        $__internal_8227088ea9f36c9c1671be36760e82be91158122ee92f4cffc3d0a2b5227719f->leave($__internal_8227088ea9f36c9c1671be36760e82be91158122ee92f4cffc3d0a2b5227719f_prof);
+        $__internal_2706f66cd13adab886b882e0d26bbbb76db954eaaaa9bb54b2ad5c9328491798->leave($__internal_2706f66cd13adab886b882e0d26bbbb76db954eaaaa9bb54b2ad5c9328491798_prof);
 
     }
 
@@ -102,7 +102,7 @@ class __TwigTemplate_a4600c2dff032b8c641edcde84fa7089c00ee8e06e19f69517c07a526e0
      <div id=\"infosUtil\">
          <h3>
             {%if(app.session.get('nom') is defined )%}
-                           Visiteur: bonjour {{app.session.get('nom')}}<br>   
+                           Visiteurs: bonjour {{app.session.get('nom')}}<br>   
             {%endif%}
         </h3>
      </div>  
